@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet"> 
 </head>
 <body class="debug">
     <header>
@@ -90,7 +91,7 @@
     <!-- sezione dropbox business -->
     <main>
         <div class="jumbotron">
-            <div class="container">
+            <div class="container wrapper">
                 
                 <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
                 <div class="banner clearfix"></div>
@@ -100,6 +101,9 @@
                         <a  href="">Inizia la prova gratuita</a>
                         </div>
                         <span>annulla in qualsiasi momento</span>
+                        <div class="arrow">
+                            <a href="#business"><i class="fas fa-arrow-down"></i></a>
+                        </div>
                     </div>
                     <div class="img-banner float-left">
                         <img src="img/banner.png" alt="">
@@ -107,26 +111,58 @@
                 </div>   
             </div>
         </div>   
-        <section>
-            
-        </section>
-        <!-- Entra in contatto con un partner Dropbox -->
-        <section>
+        <div class="container">
+            <!-- Dropbox Business -->
+            <section class="business" id="business">
+                <h2>Trova il piano Dropbox Business che fa per te</h2>
+                <div class="options">
+                    <span>
+                        <input type="radio" name="plane" id="" value="Fatturazione mensile"><label>Fatturazione mensile</label>
+                    </span>
+                    <span>
+                        <input type="radio" name="plane" id="" value="Fatturazione annuale"><label>Fatturazione annuale</label>
+                    </span>
+                </div>
+                <div class="clearfix plane-box">
+                    <div class="plane-col float-left">
+                        <div class="plane-type">
+                            <i class="fas fa-user"></i>Singolo
+                        </div>
+                        <div class="info-box">
+                            <h3>Professional</h3>
+                            <h4>19,90&euro;</h4>
+                            <h6>&sol;mese</h6>
+                            <div>
+                                <h5 class="spec"><i class="fas fa-user"></i>1 utente</h5>
+                                <h5><i class="far fa-folder"></i>3 TB di spazio di archiviazione sicuro</h5>
+                                <h5></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plane-col float-left"></div>
+                    <div class="plane-col float-left"></div>
+                </div>
+                
+            </section>
+            <!-- Entra in contatto con un partner Dropbox -->
+            <section>
 
-        </section>
-        <!-- Esegui più operazioni con Dropbox Business -->
-        <section>
+            </section>
+            <!-- Esegui più operazioni con Dropbox Business -->
+            <section>
 
-        </section>
-        <!-- Più di 500.000 team utilizzano Dropbox Business -->
-        <section>
-            
-        </section>
-        <!-- Domande frequenti -->
-        <section>
+            </section>
+            <!-- Più di 500.000 team utilizzano Dropbox Business -->
+            <section>
+                
+            </section>
+            <!-- Domande frequenti -->
+            <section>
 
-        </section>
+            </section>
+        </div>
     </main> 
+    <div class="chat"><a href="#"><i class="fas fa-comments"></i></a></div>
     <footer>
 
     </footer>

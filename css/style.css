@@ -28,10 +28,15 @@ body{
     margin: 0 auto;
 }
 
+.wrapper{
+     width: 75%;      /*da mantenere dopo container */
+}
+
 h1{
     font-size: 60px;
     margin-top: 80px;
     display: inline-block;
+    font-family: 'Antonio', sans-serif;
 }
 /* bottoni */
 
@@ -73,8 +78,8 @@ header> nav> .nav-box> ul> li> a:hover{
     position: absolute;
     bottom: 0;
     left: 0;
-    transform: translate(0,100%);
-    background-color: white;
+    transform: translate(0, calc(100% - 1px));
+    background-color:#fafafa;
     z-index: 400;
 }
 
@@ -141,6 +146,7 @@ nav{
     position: fixed;
     top: 0;
     background-color: white;
+    border-bottom: 1px solid lightgrey;
 }
 
 header nav{
@@ -198,10 +204,12 @@ header> nav> .nav-box> ul> li> a{
     display: inline-block;
 }
 
+/* ------------------- jumbotron------------------------- */
+
 .jumbotron{
     background-color: #b4d0e7;
-    height:80vh ;
-    margin-top: 81px;
+    height:75vh ;
+    margin-top: 80px;
 }
 
 .banner{
@@ -223,6 +231,15 @@ header> nav> .nav-box> ul> li> a{
     margin-top: 40px;
 }
 
+.txt-banner .arrow{
+    padding-top: 50px;
+}
+
+.txt-banner .arrow a{
+    font-size: 50px;
+    color:black;
+}
+
 .jumbotron .img-banner{
     display: inline-block;
     width: 80%;
@@ -230,6 +247,113 @@ header> nav> .nav-box> ul> li> a{
     z-index: 2;
 }
 
+/* --------------------------chat -------------------------*/
+
+.chat{
+    position:fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 70px;
+    width: 70px;
+    border-radius:35px ;
+    background-color: #0d2481;
+    z-index: 100000;
+    text-align: center;
+    line-height: 70px;
+    }
+
+.chat a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color:white;
+    font-size: 30px;
+}
+
+/* ---------------------------sezioni------------------------ */
+
+section.business{
+    margin-top: 200px;
+}
+
+section.business h2{
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    margin: 50px 0;
+}
+
+.options{
+    padding-left: 20px;
+    margin-bottom: 50px;
+}
+
+.options span{
+    margin-right: 20px;
+}
+
+section.business .options label{
+    display: inline-block;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.plane-box{
+    width: 100%;
+    height: 800px;
+}
+
+.plane-box .plane-col{
+    width: calc(100% / 3 - 40px);
+    margin: 0 20px;
+    border: 1px solid lightgrey;
+    
+}
+
+.plane-box .plane-col .plane-type{
+    border-bottom:  1px solid lightgrey;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.plane-box .plane-col .plane-type i{
+    margin-right: 15px;
+}
+
+.plane-box .plane-col .info-box{
+    padding:30px 20px;
+}
+
+.plane-box .plane-col .info-box h3{
+    font-size: 30px;
+}
+
+.plane-box .plane-col .info-box h4{
+    margin: 15px 0;
+}
+
+.plane-box .plane-col .info-box h6{
+    font-weight: 400;
+    color: rgb(148, 148, 148);
+    font-size: 14px;
+}
+
+.plane-box .plane-col .info-box .spec{
+    margin-top: 40px;
+}
+
+.plane-box .plane-col .info-box h5{
+    margin: 10px 0;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.plane-box .plane-col .info-box h5 i{
+    margin-right: 10px;
+    font-size: 20px;
+}
 /* debug */
 
 /* .debug header{
@@ -250,5 +374,14 @@ header> nav> .nav-box> ul> li> a{
 /* 
 .dropdown .col{
     background-color: lightsalmon;
-    border: 1px solid black; */
+    border: 1px solid black; 
+}*/
+
+.debug .plane-box{
+    
+}
+
+.debug .plane-box .plane-col{
+    height: 90%;
+    
 }
