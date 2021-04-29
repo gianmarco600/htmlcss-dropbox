@@ -323,6 +323,7 @@ section.business .options label{
 
 .plane-box .plane-col .info-box{
     padding:30px 20px;
+    height: 870px;
 }
 
 .plane-box .plane-col .info-box h3{
@@ -408,7 +409,7 @@ hr.tiny{
     list-style-type: none;
     display: inline-block;
     padding-left: 10px;
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 .info-box ul li span{
