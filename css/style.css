@@ -147,12 +147,12 @@ nav{
     top: 0;
     background-color: white;
     border-bottom: 1px solid lightgrey;
+    z-index: 99999;
 }
 
 header nav{
     width: 100%;
     height: 80px;
-    /* line-height: 80px; */
 }
 
 header nav .nav-box{
@@ -160,12 +160,12 @@ header nav .nav-box{
     height: 80px;
 }
 
-header>nav> /*.nav-box*/ a {
+header>nav>a {
     height: 80px;
     display: inline-block; 
 }
 
-header> nav> /*.nav-box*/ a> svg{
+header> nav>a> svg{
     width: 40px;
     height: 80px;
     margin: 0 0 0 20px; 
@@ -173,7 +173,7 @@ header> nav> /*.nav-box*/ a> svg{
     
 }
 
-header> nav> /*.nav-box*/ a> div{
+header> nav>a> div{
     display: inline-block;
     width: 100px;
     height: 40px;
@@ -208,7 +208,7 @@ header> nav> .nav-box> ul> li> a{
 
 .jumbotron{
     background-color: #b4d0e7;
-    height:75vh ;
+    height:750px ;
     margin-top: 80px;
 }
 
@@ -244,7 +244,6 @@ header> nav> .nav-box> ul> li> a{
     display: inline-block;
     width: 80%;
     position: absolute;
-    z-index: 2;
 }
 
 /* --------------------------chat -------------------------*/
@@ -345,15 +344,79 @@ section.business .options label{
 }
 
 .plane-box .plane-col .info-box h5{
-    margin: 10px 0;
     font-weight: 300;
     font-size: 14px;
 }
 
-.plane-box .plane-col .info-box h5 i{
+.plane-box .plane-col .info-box i{
     margin-right: 10px;
     font-size: 20px;
 }
+
+.dettagli{
+    margin: 30px 0 50px 0;
+}
+
+.elem{
+    margin: 10px 0;
+}
+
+.elem span{
+    display: inline-block;
+    line-height: 30px;
+    font-size: 40px;
+}
+
+.elem span i{
+    vertical-align: super;
+}
+
+.elem h5{
+    display: inline-block;
+    width: calc(100% - 30px) ;
+}
+
+.center{
+    text-align: center;
+    margin: 30px 0;
+}
+
+.prova{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.prova a{
+    display: inline-block;
+    width:100%;
+    height: 50px;
+    line-height: 30px;
+}
+
+hr.tiny{
+    width: 70px;
+    margin: 30px 0;
+    color: lightgrey;
+}
+
+.info-box ul{
+    margin-bottom: 50px;
+}
+
+.info-box ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 10px;
+    margin: 10px 0;
+}
+
+.info-box ul li span{
+    display: inline-block;
+    width: calc(100% - 30px);
+    padding-right: 30px;
+}
+
 /* debug */
 
 /* .debug header{
@@ -376,12 +439,3 @@ section.business .options label{
     background-color: lightsalmon;
     border: 1px solid black; 
 }*/
-
-.debug .plane-box{
-    
-}
-
-.debug .plane-box .plane-col{
-    height: 90%;
-    
-}
