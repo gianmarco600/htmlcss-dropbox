@@ -22,6 +22,17 @@ body{
     float: right;
 }
 
+.container{
+    width: 85%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 60px;
+    margin-top: 80px;
+    display: inline-block;
+}
 /* bottoni */
 
 .btn{
@@ -30,7 +41,8 @@ body{
 }
 
 #inizia{
-    margin-left: 25px;
+    margin-left: 20px;
+    display: inline;
 }
 
 .btn a{
@@ -44,7 +56,7 @@ body{
 
 /* animazioni bottoni e nav */
 
-header nav .nav-box ul li a:hover{
+header> nav> .nav-box> ul> li> a:hover{
     border-bottom: 2px solid black;
 }
 
@@ -52,6 +64,73 @@ header nav .nav-box ul li a:hover{
     background-color: #2c7dff;
 }
 
+/* dropdown menu */
+
+.dropdown{
+    display: none;
+    border:1px solid lightgray;
+    width: 700px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(0,100%);
+    background-color: white;
+    z-index: 400;
+}
+
+.dropdown .col{
+    width: auto;
+    margin-bottom: 25px;
+}
+
+.dropdown .col ul li a{
+    padding: 0 25px;
+}
+
+.col ul{
+    list-style-type: none;
+    margin-top: 5px;
+}
+
+li.drpd{
+    line-height: 40px;
+    margin: 10;
+}
+
+h4.drpd{
+    line-height: 40px;
+    margin: 25px 25px 15px 25px ;
+    border-bottom: 1px solid lightgrey;
+    display: inline-block;
+    width: 180px;
+    margin: 0 20px;
+}
+
+.drpd a{
+    text-decoration: none;
+    color: black;
+}
+
+.drop{
+    position: relative;
+}
+
+#fun{
+    width: 480px;
+}
+
+#fun .col{
+    margin-top: 25px;
+}
+
+/* animazioni dropdown */
+.drop:hover .dropdown{
+    display: inline-block;
+}
+
+li.drpd:hover{
+    background-color: rgb(226, 226, 226);
+}
 /* header */
 
 header{
@@ -59,8 +138,9 @@ header{
 }
 
 nav{
-    position: absolute;
+    position: fixed;
     top: 0;
+    background-color: white;
 }
 
 header nav{
@@ -74,12 +154,12 @@ header nav .nav-box{
     height: 80px;
 }
 
-header nav /*.nav-box*/ a {
+header>nav> /*.nav-box*/ a {
     height: 80px;
     display: inline-block; 
 }
 
-header nav /*.nav-box*/ a svg{
+header> nav> /*.nav-box*/ a> svg{
     width: 40px;
     height: 80px;
     margin: 0 0 0 20px; 
@@ -87,7 +167,7 @@ header nav /*.nav-box*/ a svg{
     
 }
 
-header nav /*.nav-box*/ a div{
+header> nav> /*.nav-box*/ a> div{
     display: inline-block;
     width: 100px;
     height: 40px;
@@ -99,22 +179,55 @@ header nav /*.nav-box*/ a div{
     color:#0061ff;
 }
 
-header nav .nav-box ul{
+header> nav> .nav-box> ul{
     list-style-type: none;
     display: inline-block;
 }
 
-header nav .nav-box ul li{
+header> nav> .nav-box> ul> li{
     display: inline-block;
     line-height: 80px;
 }
 
-header nav .nav-box ul li a{
+header> nav> .nav-box> ul> li> a{
     text-decoration: none;
     color: black;
     font-size: 18px;
     margin: 0 17px;
+    height: 80px;
+    display: inline-block;
+}
 
+.jumbotron{
+    background-color: #b4d0e7;
+    height:80vh ;
+    margin-top: 81px;
+}
+
+.banner{
+    margin-top: 30px;
+}
+
+.txt-banner{
+    display: inline-block;
+    width: 30%;
+    margin: 50px 0;
+}
+
+.txt-banner p{
+    margin-bottom: 40px;
+}
+
+.txt-banner span{
+    display: inline-block;
+    margin-top: 40px;
+}
+
+.jumbotron .img-banner{
+    display: inline-block;
+    width: 80%;
+    position: absolute;
+    z-index: 2;
 }
 
 /* debug */
@@ -134,3 +247,8 @@ header nav .nav-box ul li a{
 /* .debug header nav .nav-box a div{
     background-color: royalblue;
 } */
+/* 
+.dropdown .col{
+    background-color: lightsalmon;
+    border: 1px solid black; */
+}
