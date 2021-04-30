@@ -309,7 +309,7 @@ section.business .options label{
 
 .plane-box{
     width: 100%;
-    height: 800px;
+    /* height: 800px; */
 }
 
 .plane-box .plane-col{
@@ -319,7 +319,7 @@ section.business .options label{
     
 }
 
-.plane-box .plane-col .plane-type{
+.plane-type{
     border-bottom:  1px solid lightgrey;
     width: 100%;
     height: 50px;
@@ -327,7 +327,7 @@ section.business .options label{
     text-align: center;
 }
 
-.plane-box .plane-col .plane-type i{
+.plane-type i{
     margin-right: 15px;
 }
 
@@ -428,6 +428,39 @@ hr.tiny{
     padding-right: 30px;
 }
 
+.plane-row{
+    margin: 40px 20px;
+    width: calc(100% - 40px);
+    border: 1px solid lightgrey;
+}
+
+.row-col{
+    position: relative;
+}
+
+.row-col .row-col-text{
+    width: calc(80% - 60px);
+}
+
+.plane-row .row-col h3{
+    font-size: 30px;
+}
+
+.business .plane-row .row-col h3, .business .plane-row .row-col h4, .business .plane-row .row-col p{
+    margin: 15px 30px;
+    display: inline-block;
+    width: 100%;
+}
+
+.plane-row .row-col p{
+    margin-bottom: 30px;
+}
+
+.btn.btn-pos{
+    position: absolute;
+    top: 40px;
+    right: 30px;f
+}
 /* debug */
 
 /* .debug header{
@@ -449,4 +482,8 @@ hr.tiny{
 .dropdown .col{
     background-color: lightsalmon;
     border: 1px solid black; 
+}*/
+
+/* .debug .plane-row{ 
+    height: 100px;
 }*/
