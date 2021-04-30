@@ -242,7 +242,7 @@ header> nav> .nav-box> ul> li> a{
 
 .jumbotron .img-banner{
     display: inline-block;
-    width: 80%;
+    /* width: 80%; */
     position: absolute;
 }
 
