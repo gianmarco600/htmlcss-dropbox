@@ -8,6 +8,11 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
+.general-contain{
+    max-width: 1920px;
+    margin:0 auto;
+}
+
 .clearfix::after{
     content: '';
     display: table;
@@ -140,12 +145,14 @@ li.drpd:hover{
 
 header{
     width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
 }
 
 nav{
-    position: fixed;
-    top: 0;
-    background-color: white;
+    
+    
     border-bottom: 1px solid lightgrey;
     z-index: 99999;
 }
