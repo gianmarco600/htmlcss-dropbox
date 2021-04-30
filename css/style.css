@@ -64,6 +64,12 @@ h1{
     font-size: 18px;
 }
 
+#btn-mk2 a{
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+}
+
 /* animazioni bottoni e nav */
 
 header> nav> .nav-box> ul> li> a:hover{
@@ -281,6 +287,8 @@ header> nav> .nav-box> ul> li> a{
 
 /* ---------------------------sezioni------------------------ */
 
+/* business */
+
 section.business{
     margin-top: 200px;
 }
@@ -453,14 +461,54 @@ hr.tiny{
 }
 
 .plane-row .row-col p{
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .btn.btn-pos{
     position: absolute;
     top: 40px;
-    right: 30px;f
+    right: 30px;
 }
+
+/* partner */
+section.partner{
+    margin-top: 100px;
+}
+
+.partner>.row{
+    padding: 0 20px;
+}
+
+.partner>.row>div{
+    width: calc(100% / 2 - 40px);
+    display: inline-block;
+    height: 100%;
+}
+
+.partner>.row>div>img{
+    width: 100%;
+}
+
+.partner>.row>div>h3, .partner>.row>div>p{
+    display: inline-block;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.partner>.row>div>h3{
+    font-size: 30px;
+}
+
+
+
+.partner #text{
+    padding: 70px 80px;
+}
+
+.partner .btn{
+    margin-top: 40px;
+}
+
 /* debug */
 
 /* .debug header{
