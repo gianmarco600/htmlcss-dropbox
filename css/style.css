@@ -213,7 +213,7 @@ header> nav> .nav-box> ul> li> a{
 
 .jumbotron{
     background-color: #b4d0e7;
-    height:750px ;
+    /* height:750px ; */
     margin-top: 80px;
 }
 
@@ -249,6 +249,7 @@ header> nav> .nav-box> ul> li> a{
     display: inline-block;
     /* width: 80%; */
     position: absolute;
+    padding-top: 50px;
 }
 
 .jumbotron .img-banner img{
