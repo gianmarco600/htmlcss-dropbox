@@ -47,7 +47,6 @@ h1{
     font-family: 'Antonio', sans-serif;
 }
 
-}
 /* ----------------------bottoni---------------------- */
 
 .btn{
@@ -80,7 +79,6 @@ h1{
     line-height: 10px;
 }
 
-#
 
 /* -------------------animazioni bottoni e nav -----------------*/
 
@@ -712,11 +710,11 @@ section.operazioni{
 
 .faq>.box{
     margin: 50px 0;
-    border-top: 1px solid gray;
+    border-top: 1px solid lightgray;
 }
 
 .question{
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid lightgray;
     /* border-top: 1px solid grey; */
     padding: 20px 0;
     line-height: 40px;
@@ -735,6 +733,11 @@ section.operazioni{
      transition: height 1s; /* non funziona la transition */
 }
 
+.question>span{
+    width: 80%;
+    display: inline-block;
+}
+
 .question>.answer>p{
     font-size: 16px;
     font-weight: 300;
@@ -747,8 +750,62 @@ section.operazioni{
     display: block;
     height: auto;
     transition: height 1s; /* non funziona la transition */
-    
 }
+
+/* ---------------footer----------------- */
+
+footer{
+    width: 100%;
+    min-height: 650px;
+    background-color: #000000;
+    color: white;
+    padding: 150px 0;
+}
+
+footer .col{
+    width: calc( 100% / 5);
+}
+
+footer h5{
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+footer ul li{
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+footer a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+footer hr{
+    width: 100px;
+    color: white;
+    margin-top: 100px;
+}
+
+footer #lang{
+    margin: 30px 0;
+    display: inline-block;
+}
+
+#lang:last-child{
+    vertical-align: middle;
+}
+
 /* debug */
 
 /* .debug header{
