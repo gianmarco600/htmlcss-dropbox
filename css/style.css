@@ -300,6 +300,64 @@ header>nav>.nav-box>ul>li>a{
     font-size: 30px;
 }
 
+.cont{
+    position: relative;
+    display: none;
+}
+
+.chat>.cont>.chat-box{
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    width: 300px;
+    height: 400px;
+    border: 1px solid lightgray;
+    background-color: white;
+    text-align: left;
+}
+
+.chat>.cont>.chat-box>.chat-head{
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #0061ff;
+    color: white;
+}
+
+.chat>.cont>.chat-box>.chat-head>span{
+    min-height: 30px;
+    display: block;
+    line-height: 30px;
+
+}
+
+.chat>.cont>.chat-box>.text-area{
+    width: 100%;
+    background-color: rgb(228, 228, 228);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 4;
+    line-height: 40px;
+}
+
+.chat>.cont>.chat-box>.text-area>.text{
+    width: calc(100% - 50px);
+    line-height: 30px;
+    display: inline-block;
+    margin-left:10px ;
+    margin-top: 5px;
+}
+
+.chat>.cont>.chat-box>.text-area>a{
+    width: 20px;
+    margin-left:5px ;
+    color: #0061ff;
+}
+
+.chat:hover .cont{
+    display: block;
+}
 /* ---------------------------sezioni------------------------ */
 
 /* -------------------business ---------------------*/
