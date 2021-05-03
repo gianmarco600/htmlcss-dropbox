@@ -70,10 +70,17 @@ h1{
 }
 
 #btn-mk2 a{
-    background-color: transparent;
+    background-color: white;
     border: 1px solid black;
     color: black;
 }
+
+#btn-mk2{
+    display: inline-block;
+    line-height: 10px;
+}
+
+#
 
 /* -------------------animazioni bottoni e nav -----------------*/
 
@@ -549,6 +556,7 @@ section.operazioni{
 
 .teams{
     margin-top: 150px;
+    min-height: calc(33vw + 230px);
 }
 .teams h2{
     display: block;
@@ -568,6 +576,7 @@ section.operazioni{
     position:absolute;
     left: 0;
     margin-top: 30px;
+    z-index: 2;
 }
 
 .teams>.row>.col-side{
@@ -580,6 +589,23 @@ section.operazioni{
     width: 33vw;
     background-color: #f5f5f5;
     height: 100%;
+    padding: 20px 40px;
+    overflow-y: auto;
+    margin-bottom: 0;
+}
+
+.teams>.row>.col-center>img{
+    width: 33%;
+    margin: 150px 0 20px 0;
+}
+
+.teams>.row>.col-center>hr{
+    width: 100px;
+    height: 0.5px;
+}
+
+.teams>.row>.col-center>p{
+    margin: 100px 0;
 }
 
 .teams>.row>.col-side>.item{
@@ -588,6 +614,7 @@ section.operazioni{
     background-color: salmon;
     text-align: center;
     line-height: 16vw;
+    position: relative;
 }
 
 #designit{
@@ -628,6 +655,100 @@ section.operazioni{
     filter: invert(1);
 }
 
+.bordo{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border:10px solid rgba(255, 255, 255, 0.4);
+    display: none;
+}
+
+.section-foot{
+    background-color: #b4d0e7;
+    min-height: 300px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    margin-top: 0;
+    padding-top: 150px;
+}
+
+.section-foot>.box{
+    width: 55%;
+    margin: 0 auto;
+}
+
+.section-foot>.box>h2{
+    display: inline-block;
+    font-size: 40px;
+    color: #61082b;
+    width: 60%;
+    margin-bottom: 100px;
+}
+
+.section-foot>.box>#btn-mk2{
+    margin: 0 0 0 200px;
+    position: relative;
+    transform: translate(0, -300%);
+}
+
+/* ------------animazioni teams----------- */
+
+.teams>.row>.col-side>.item:hover .bordo{
+    display: block;
+}
+
+/* ------------------FAQ ------------------*/
+
+.faq{
+    margin-top: 500px;
+}
+
+.faq>h3{
+    font-size: 40px;
+}
+
+.faq>.box{
+    margin: 50px 0;
+    border-top: 1px solid gray;
+}
+
+.question{
+    border-bottom: 1px solid gray;
+    /* border-top: 1px solid grey; */
+    padding: 20px 0;
+    line-height: 40px;
+    font-size: 18px;
+}
+
+.question>i{
+    margin-top: 10px;
+}
+
+.question>.answer{
+    width: 100%;
+    display: none;
+    padding: 7px 0;
+    height: 0;
+     transition: height 1s; /* non funziona la transition */
+}
+
+.question>.answer>p{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.4em;
+    display: block;
+    width: 80%;
+}
+
+.question:hover .answer{
+    display: block;
+    height: auto;
+    transition: height 1s; /* non funziona la transition */
+    
+}
 /* debug */
 
 /* .debug header{
@@ -655,6 +776,3 @@ section.operazioni{
     height: 100px;
 }*/
 
-.debug .operazioni>.row>.col{
-    
-}
